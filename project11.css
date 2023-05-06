@@ -1,0 +1,232 @@
+.topnav{
+    
+    padding-top: 2%;
+    padding-bottom :2%;
+    font-size: x-large;
+    font-style: oblique;
+}
+.topnav a{
+margin-right: 0.5%;
+margin-left: 8%;
+color: rgba(255, 255, 255, 0.986);
+padding-left: 5%;
+}
+.topnav a:hover{
+    color: aqua;
+}
+
+main{
+border: 2px solid black;
+position: absolute;
+right: 0%;
+width: 30%;
+border: 3px solid transparent;
+padding: 10px;
+align-items: center;
+margin-right: 35%;
+margin-top: 8%;
+
+background: transparent;
+backdrop-filter: blur(15px);
+transition: all .3s ease-in;
+}
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  input[type=text]:focus {
+    width: 25%;
+  }
+
+  body {
+    background-image: url("https://e0.pxfuel.com/wallpapers/522/710/desktop-wallpaper-deer-forest-outdoor-moon-minimal-art.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    background-attachment: fixed;
+
+
+
+    
+
+}
+
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: transparent;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 60%;
+  height: 400px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.clickk{
+position: absolute;
+top:58%;
+left: 41%;
+}
+
+
+
+
+.card-container {
+height: 250px;
+perspective: 600;
+position: absolute;
+width: 250px;
+top: 34%;
+left: 45%;
+}
+.card {
+height: 100%;
+position: absolute;
+transform-style: preserve-3d;
+transition: all 1s ease-in-out;
+width: 100%;
+}
+.card:hover {
+transform: rotateY(180deg);
+}
+.card .side {
+backface-visibility: hidden;
+height: 100%;
+position: absolute;
+width: 100%;
+}
+.card .back {
+transform: rotateY(180deg);
+}
+
+
+
+#containerrrrr {
+width: 100%;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+
+button {
+  position: relative;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  color: #ededed;
+  font-size: 24px;
+  letter-spacing: 4px;
+  padding: 15px 50px;
+  overflow: hidden;
+  font-style: bold;
+  border: 2px solid transparent;
+}
+button span {
+  position: absolute;
+}
+button span:nth-child(1) {
+  bottom: 0;
+  left: -100%;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #083a8b);
+}
+button span:nth-child(2) {
+  bottom: -100%;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(0deg, transparent, #083a8b);
+}
+button span:nth-child(3) {
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(-90deg, transparent, #083a8b);
+}
+button span:nth-child(4) {
+  top: -100%;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #083a8b);
+}
+button:hover {
+  color: #000;
+  box-shadow: 0 0 10px #083a8b,
+              0 0 40px #083a8b,
+              0 0 80px #083a8b;
+  background: #083a8b;
+  transition-delay: 1s;
+}
+button:hover span:nth-child(1) {
+    animation: leftLine .5s linear 0s;
+}
+button:hover span:nth-child(2) {
+    animation: bottomLine .5s linear .25s;
+}
+button:hover span:nth-child(3) {
+    animation: rightLine .5s linear 0s;
+}
+button:hover span:nth-child(4) {
+    animation: topLine .5s linear .25s;
+}
+@keyframes topLine {
+    0% {
+      top: -100%;
+    }
+    100% {
+      top: 100%;
+    }
+}
+@keyframes bottomLine {
+    0% {
+      bottom: -100%;
+    }
+    100% {
+      bottom: 100%;
+    }
+}
+@keyframes rightLine {
+    0% {
+      right: -100%;
+    }
+    100% {
+      right: 100%;
+    }
+}
+@keyframes leftLine {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 100%;
+    }
+}
+
+
+
+
